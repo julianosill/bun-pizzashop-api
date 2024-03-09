@@ -1,0 +1,34 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1710017142347,
+      "tag": "0000_confused_lilith",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1710017261608,
+      "tag": "0001_fantastic_stone_men",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1710017445575,
+      "tag": "0002_purple_nightmare",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1710017534915,
+      "tag": "0003_little_taskmaster",
+      "breakpoints": true
+    }
+  ]
+}
