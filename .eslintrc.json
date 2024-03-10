@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "@rocketseat/eslint-config/node"
+  ],
+  "plugins": [
+    "simple-import-sort",
+    "drizzle"
+  ],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "drizzle/enforce-delete-with-where": "error",
+    "drizzle/enforce-update-with-where": "error"
+  } 
+}
