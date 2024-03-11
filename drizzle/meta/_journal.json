@@ -29,6 +29,20 @@
       "when": 1710017534915,
       "tag": "0003_little_taskmaster",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1710187528599,
+      "tag": "0004_perpetual_lake",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1710189031790,
+      "tag": "0005_overconfident_lady_bullseye",
+      "breakpoints": true
     }
   ]
 }
