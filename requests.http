@@ -1,0 +1,30 @@
+@baseUrl = http://localhost:3333
+@authToken = {{authenticate.response.body.access_token}}
+
+
+# @name authenticate
+POST {{baseUrl}}/authenticate
+Content-Type: application/json
+
+{
+  "email": "admin@admin.com"
+}
+
+###
+
+# @name sign_out
+POST {{baseUrl}}/sign-out
+
+
+###
+
+# @name auth_from_link
+GET http://localhost:3333/auth-links/authenticate?code=z7to3s441b1wdw7eiwz6sltv&redirect=http%3A%2F%2Flocalhost%3A5173
+Content-Type: application/json
+# Authorization: Bearer {{authToken}}
+
+###
+
+# @name get_profile
+GET {{baseUrl}}/profile
+Content-Type: application/json
