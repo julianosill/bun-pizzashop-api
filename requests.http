@@ -7,7 +7,7 @@ POST {{baseUrl}}/authenticate
 Content-Type: application/json
 
 {
-  "email": "admin@admin.com"
+  "email": "julianosill@yahoo.com"
 }
 
 ###
