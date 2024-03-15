@@ -68,7 +68,7 @@ const [restaurant] = await db
 console.log(chalk.yellowBright('✓ Restaurant created!'))
 
 // Creaate products
-function generatProducts() {
+function generateProducts() {
   return {
     name: faker.commerce.productName(),
     description: faker.commerce.productDescription(),
@@ -79,12 +79,12 @@ function generatProducts() {
 const availableProducts = await db
   .insert(products)
   .values([
-    generatProducts(),
-    generatProducts(),
-    generatProducts(),
-    generatProducts(),
-    generatProducts(),
-    generatProducts(),
+    generateProducts(),
+    generateProducts(),
+    generateProducts(),
+    generateProducts(),
+    generateProducts(),
+    generateProducts(),
   ])
   .returning()
 console.log(chalk.yellowBright('✓ Products created!'))
@@ -133,7 +133,7 @@ for (let i = 0; i < 200; i++) {
 }
 await db.insert(orders).values(ordersToInsert)
 await db.insert(orderItems).values(orderItemsToInsert)
-console.log(chalk.greenBright('✓ Orders created!'))
+console.log(chalk.yellowBright('✓ Orders created!'))
 
 console.log(chalk.greenBright('✓ Database seeded successfully!'))
 
