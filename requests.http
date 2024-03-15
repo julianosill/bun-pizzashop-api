@@ -38,10 +38,25 @@ Content-Type: application/json
 ###
 
 # @name get_order_details
-GET {{baseUrl}}/orders/uwut1eylcb41f1bcx5j6lu91
+GET {{baseUrl}}/orders/oc7v6si16qhpma2fo34dqze9
 Content-Type: application/json
 
 ###
 
-# @name approve-order
-PATCH {{baseUrl}}/orders/uwut1eylcb41f1bcx5j6lu91/approve
+# @name approve_order
+PATCH {{baseUrl}}/orders/b8oov2hs0gx8qasnwjlosfal/approve
+
+###
+
+# @name dispatch_order
+PATCH {{baseUrl}}/orders/b8oov2hs0gx8qasnwjlosfal/dispatch
+
+###
+
+# @name deliver_order
+PATCH {{baseUrl}}/orders/b8oov2hs0gx8qasnwjlosfal/deliver
+
+###
+
+# @name cancel_order
+PATCH {{baseUrl}}/orders/oc7v6si16qhpma2fo34dqze9/cancel

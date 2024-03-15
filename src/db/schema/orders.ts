@@ -24,7 +24,7 @@ export const orders = pgTable('orders', {
     .references(() => restaurants.id, {
       onDelete: 'cascade',
     }),
-  status: orderStatusEnum('status').default('pending'),
+  status: orderStatusEnum('status').default('pending').notNull(),
   totalInCents: integer('total_in_cents').notNull(),
   createdAt: timestamp('created_at').notNull().defaultNow(),
 })
