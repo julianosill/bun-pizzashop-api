@@ -38,5 +38,10 @@ Content-Type: application/json
 ###
 
 # @name get_order_details
-GET {{baseUrl}}/orders/fefaiuvubw1muzzikqlenbt1
+GET {{baseUrl}}/orders/uwut1eylcb41f1bcx5j6lu91
 Content-Type: application/json
+
+###
+
+# @name approve-order
+PATCH {{baseUrl}}/orders/uwut1eylcb41f1bcx5j6lu91/approve
