@@ -7,7 +7,7 @@ POST {{baseUrl}}/authenticate
 Content-Type: application/json
 
 {
-  "email": "julianosill@yahoo.com"
+  "email": "admin@admin.com"
 }
 
 ###
@@ -19,7 +19,7 @@ POST {{baseUrl}}/sign-out
 ###
 
 # @name auth_from_link
-GET http://localhost:3333/auth-links/authenticate?code=iffvtkcjyg5vxaidmhhxtkef&redirect=http%3A%2F%2Flocalhost%3A5173
+GET http://localhost:3333/auth-links/authenticate?code=lj1oy9opb12otmq9uu8mpu34&redirect=http%3A%2F%2Flocalhost%3A5173
 Content-Type: application/json
 # Authorization: Bearer {{authToken}}
 
@@ -31,6 +31,12 @@ Content-Type: application/json
 
 ###
 
-# @name get_profile
+# @name get_managed_restaurant
 GET {{baseUrl}}/managed-restaurant
+Content-Type: application/json
+
+###
+
+# @name get_order_details
+GET {{baseUrl}}/orders/fefaiuvubw1muzzikqlenbt1
 Content-Type: application/json

@@ -14,7 +14,7 @@ export const orderItems = pgTable('order_items', {
       onDelete: 'cascade',
     }),
   productId: text('product_id').references(() => products.id, {
-    onDelete: 'set null',
+    onDelete: 'set default',
   }),
   priceInCents: integer('price_in_cents').notNull(),
   quantity: integer('quantity').notNull(),
@@ -28,7 +28,7 @@ export const orderItemsRelations = relations(orderItems, ({ one }) => {
       relationName: 'order_item_order',
     }),
     product: one(products, {
-      fields: [orderItems.orderId],
+      fields: [orderItems.productId],
       references: [products.id],
       relationName: 'order_item_product',
     }),
