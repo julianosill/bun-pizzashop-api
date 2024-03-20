@@ -19,7 +19,7 @@ POST {{baseUrl}}/sign-out
 ###
 
 # @name auth_from_link
-GET http://localhost:3333/auth-links/authenticate?code=lj1oy9opb12otmq9uu8mpu34&redirect=http%3A%2F%2Flocalhost%3A5173
+GET http://localhost:3333/auth-links/authenticate?code=k1e3e3buxha6as9rtqcrpdnm&redirect=http%3A%2F%2Flocalhost%3A5173
 Content-Type: application/json
 # Authorization: Bearer {{authToken}}
 
@@ -60,3 +60,8 @@ PATCH {{baseUrl}}/orders/b8oov2hs0gx8qasnwjlosfal/deliver
 
 # @name cancel_order
 PATCH {{baseUrl}}/orders/oc7v6si16qhpma2fo34dqze9/cancel
+
+###
+
+# @name get_orders
+GET {{baseUrl}}/orders?pageIndex=0
