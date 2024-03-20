@@ -73,3 +73,13 @@ GET {{baseUrl}}/metrics/month-revenue
 
 # @name get_day_orders
 GET {{baseUrl}}/metrics/day-orders-amount
+
+###
+
+# @name get_month_orders
+GET {{baseUrl}}/metrics/month-orders-amount
+
+###
+
+# @name get_canceled_month_orders
+GET {{baseUrl}}/metrics/canceled-month-orders-amount
