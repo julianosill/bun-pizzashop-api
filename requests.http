@@ -1,5 +1,4 @@
 @baseUrl = http://localhost:3333
-@authToken = {{authenticate.response.body.access_token}}
 
 
 # @name authenticate
@@ -19,9 +18,8 @@ POST {{baseUrl}}/sign-out
 ###
 
 # @name auth_from_link
-GET http://localhost:3333/auth-links/authenticate?code=k1e3e3buxha6as9rtqcrpdnm&redirect=http%3A%2F%2Flocalhost%3A5173
+GET http://localhost:3333/auth-links/authenticate?code=zoii0j520qmdz2o37wow29du&redirect=http%3A%2F%2Flocalhost%3A5173
 Content-Type: application/json
-# Authorization: Bearer {{authToken}}
 
 ###
 
@@ -38,7 +36,7 @@ Content-Type: application/json
 ###
 
 # @name get_order_details
-GET {{baseUrl}}/orders/oc7v6si16qhpma2fo34dqze9
+GET {{baseUrl}}/orders/kwkcaqlzt4ozukx0lleq9hjw
 Content-Type: application/json
 
 ###
@@ -70,3 +68,8 @@ GET {{baseUrl}}/orders?pageIndex=0
 
 # @name get_month_revenue
 GET {{baseUrl}}/metrics/month-revenue
+
+###
+
+# @name get_day_orders
+GET {{baseUrl}}/metrics/day-orders-amount

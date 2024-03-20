@@ -128,7 +128,7 @@ for (let i = 0; i < 200; i++) {
       'delivered',
       'canceled',
     ]),
-    createdAt: faker.date.recent({ days: 40 }),
+    createdAt: faker.date.recent({ days: 40, refDate: new Date() }),
   })
 }
 await db.insert(orders).values(ordersToInsert)
