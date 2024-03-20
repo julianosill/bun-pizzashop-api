@@ -83,3 +83,8 @@ GET {{baseUrl}}/metrics/month-orders-amount
 
 # @name get_canceled_month_orders
 GET {{baseUrl}}/metrics/canceled-month-orders-amount
+
+###
+
+# @name get_popular_products
+GET {{baseUrl}}/metrics/popular-products
