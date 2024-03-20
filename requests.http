@@ -65,3 +65,8 @@ PATCH {{baseUrl}}/orders/oc7v6si16qhpma2fo34dqze9/cancel
 
 # @name get_orders
 GET {{baseUrl}}/orders?pageIndex=0
+
+###
+
+# @name get_month_revenue
+GET {{baseUrl}}/metrics/month-revenue
