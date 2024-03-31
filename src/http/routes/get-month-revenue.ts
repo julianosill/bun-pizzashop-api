@@ -52,6 +52,6 @@ export const getMonthRevenue = new Elysia()
       revenue: currentMonthRevenue?.revenueInCents,
       diffFromLastMonth: diffFromLastMonth
         ? Number((diffFromLastMonth - 100).toFixed(2))
-        : null,
+        : 0,
     }
   })
