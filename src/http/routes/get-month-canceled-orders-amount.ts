@@ -7,9 +7,9 @@ import { orders } from '../../db/schema'
 import { auth } from '../auth'
 import { UnauthorizedError } from '../errors/unauthorized-error'
 
-export const getCanceledMonthOrdersAmount = new Elysia()
+export const getMonthCanceledOrdersAmount = new Elysia()
   .use(auth)
-  .get('/metrics/canceled-month-orders-amount', async ({ getCurrentUser }) => {
+  .get('/metrics/month-canceled-orders-amount', async ({ getCurrentUser }) => {
     const { restaurantId } = await getCurrentUser()
 
     if (!restaurantId) throw new UnauthorizedError()
