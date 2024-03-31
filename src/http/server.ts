@@ -72,6 +72,7 @@ const app = new Elysia()
     }
   })
 
-app.listen(3333, () => {
-  console.log('HTTP server running')
+const PORT = 3333
+app.listen(PORT, () => {
+  console.log(`HTTP server running at http://localhost:${PORT}`)
 })
