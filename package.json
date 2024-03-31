@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@elysiajs/cookie": "^0.8.0",
+    "@elysiajs/cors": "^1.0.2",
     "@elysiajs/jwt": "^0.8.0",
     "@paralleldrive/cuid2": "^2.2.2",
     "dayjs": "^1.11.10",
